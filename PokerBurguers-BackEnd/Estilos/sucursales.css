@@ -1,0 +1,86 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+
+}
+header{
+    background-color: #ffff00;
+    text-align: center;
+    padding: 1rem;
+
+}
+.logo{
+    width: 80px;
+    height: 80px;
+}
+.logo_footer{
+    width: 60px;
+    height: 60px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 0 0;
+}
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #663300;
+    font-weight: bold;
+    display: block;
+    border-radius: 10px;
+    padding: 15px;
+}
+    nav ul li a:hover{
+        background-color: #854200;
+        color: white;
+        transition: 0.4s;
+    }
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+.container {
+    padding: 20px;
+}
+.tabs {
+    overflow: hidden;
+    background: #ccc;
+    padding: 10px;
+}
+.tabs button {
+    background-color: #f1f1f1;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+.tabs button:hover {
+    background-color: #ddd;
+}
+.tabs button.active {
+    background-color: #333;
+    color: white;
+}
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.tab-content.active {
+    display: block;
+}
+footer {
+    background-color: #663300; /* Color secundario */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
