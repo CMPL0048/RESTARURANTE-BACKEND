@@ -117,5 +117,34 @@ footer p {
     border-radius: 10px;
     margin-left: 10px;
 }
-
-
+/*SLIDER */
+.carrusel {
+    width: 1200px;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto auto;
+    animation: slide 15s infinite alternate ease-in-out;
+}
+    .carrusel ul{
+        display: flex;
+        padding: 0px;
+        width: 400%;
+    }
+    .carrusel li{
+        width: 100%;
+        list-style: none;
+    }
+    .carrusel img{
+        width: 100%;
+        height: auto;
+    }
+    @keyframes slide {
+        0% {margin-left: 0;}
+        30% {margin-left: 0;}
+        
+        35% {margin-left: -100%;}
+        65% {margin-left: -100%;}
+        
+        70% {margin-left: -200%;}
+        100% {margin-left: -200%;}
+    }

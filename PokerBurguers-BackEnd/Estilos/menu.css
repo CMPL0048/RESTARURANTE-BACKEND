@@ -39,17 +39,23 @@ nav ul li a {
     nav ul li a:hover{
         background-color: #854200;
         color: white;
-        transition: 0.4s;
+        
     }
 nav a:hover{
     color: #c78c19;
     text-decoration: underline;
+    transition :steps(1, start);
 }
 .productos{
+    width:auto;
+    height:auto;
+    position:relative;
     display: flex;
     margin: 0 auto;
     padding: 50px;
     background-color: #f3dbc3;
+    justify-content: center;
+    align-items: center;
 }
 .productos li{
     background-color: #ff4800;
@@ -62,35 +68,33 @@ nav a:hover{
     border: 5px solid #000000;
     border-radius: 50px;
 }
-.imgcomida{
+
+.productos li:hover, .productos li.active {
+    transform: scale(1.2);
+    box-shadow: 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+
+}
+
+.imgcomida {
     width: 130px;
     height: 130px;
     margin: 2%;
-    box-sizing: border-box;
-    border: 7px #000000 solid;
-    border-radius: 10px;
+    box-sizing:border-box;
+    border-radius:30%;
 }
-.imgcomida:hover{
-    width: 180px;
-    height: 180px;
-    border: #ffff00 7px solid;
-}
+
 .productos li:hover{
     border-color: #d90909;
     
 }
-.productos li:active{
-    border-color:#07901a;
-}
+
 .productos h2{
-    font-size: 30px ;
+    font-size: 30px, ;
     font-weight: bold;
 }
-.productos li:hover h2{
-    font-size: 35px;
-    color:#ffff00;
-}
-.productos li:hover p{
+
+.productos li.p:hover h2{
     color:#ffff00;
 }
 .producto-descripcion{
@@ -113,5 +117,5 @@ footer {
 .copyright{
     color:#FFFFFF;
     font-size: 13px;
-    margin: 20px;
+    margin:20px;
 }
