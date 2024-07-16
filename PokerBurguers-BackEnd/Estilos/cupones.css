@@ -52,45 +52,70 @@ nav ul li a:hover {
 }
 
 main {
-    display: flex;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 2rem;
     padding: 2rem;
 }
 
 section {
     margin: 0 1rem;
-    background-color: #fff; 
+    background-color: #fff;
     padding: 1rem;
     border-radius: 8px;
-    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);    
 }
 
 .cupones h2, .novedades h2 {
     font-family: '  Monserrat', sans-serif;
     text-align: center;
     color: #663300; 
+    margin-bottom: 1rem;
+}
+.cupones-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
 }
 
-
 .cupon {
-    background-color: #f3dbc3; 
+    background-color: #f3dbc3;
     padding: 1rem;
     border-radius: 8px;
     text-align: center;
     border: 1px solid #663300;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.cupon:hover {
+    transform: scale(1.05);
+}
+
+.cupon h3 {
+    margin-top: 0;
+    color: #854200;
+}
+
+.cupon p {
+    margin: 0.5rem 0;
 }
 
 .novedad_detalle h3 {
     font-family: "Monserrarat",sans-serif;
     text-align: center;
     color: #663300; 
+     margin-bottom: 1rem;
 }
 
 .novedad_detalle img {
-    display: block;
+     display: block;
     height: auto;
-    margin: 0 auto; 
+    width: 50%; /* Ajustar el tamaño de la imagen */
+    margin: 0 auto;
     border-radius: 8px;
     margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 
