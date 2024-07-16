@@ -2,9 +2,17 @@
     margin: 0px;
     padding: 0px;
 }
+@font-face {
+    font-family: 'Montserrat Variable';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 100 900;
+    src: url(https://cdn.jsdelivr.net/fontsource/fonts/montserrat:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+    unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
 .logo{
-    width: 80px;
-    height: 80px;
+    width: 150px;
+    height: 150px;
 }
 .logo_footer{
     width: 60px;
@@ -25,13 +33,35 @@ body {
     font-size: 20px;
 }
 .banner {
-    width: 100%;
-    margin-left: 0px;
+    width: auto;
+    height: 680px;
     overflow: hidden;
-    margin: top;
+    margin:  0;
     padding: 0px;
     float: left;
+    border-radius: 8px;
+
     }
+    .pru
+    {
+       width: auto;
+       height: auto;
+       margin: 0 auto;
+    }
+section {
+    
+    flex: 1;
+    margin: 0 1rem;
+    background-color: #fff; /* Fondo blanco para las secciones */
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.listacotn{
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
 nav ul {
     list-style: none;
     padding: 0;
@@ -61,14 +91,6 @@ main {
     justify-content: space-around;
     padding: 2rem;
 }
-section {
-    flex: 1;
-    margin: 0 1rem;
-    background-color: #fff; /* Fondo blanco para las secciones */
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
 footer {
     background-color: #663300; /* Color secundario */
@@ -84,9 +106,6 @@ footer p {
 .p_centrado{
     text-align: center;
 }
-.listacotn{
-    align-items: center;
-}
 .imgcont{
     align-items: center;
     list-style: none;
@@ -98,3 +117,5 @@ footer p {
     border-radius: 10px;
     margin-left: 10px;
 }
+
+
