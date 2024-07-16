@@ -23,44 +23,54 @@
                 </nav>
             </div>
         </header>
-        <div>
-            <ul class="productos">
-                <li>
-                    <h2>Hamburguesa</h2><br>
-                    <img class="imgcomida" src="imagenes/hamburgesa_milanesa.png">
-                    <p class="producto-descripcion"> Hamburguesa con carne de res, queso, lechuga, tomate y salsa especial.</p>
-                    <p class="producto-precio">$90.00</p>
-                </li>
-                <br>
-                <li>
-                    <h2>Alitas de Pollo</h2> <br>
-                    <img class="imgcomida" src="imagenes/alitas.jpg">
-                    <p class="producto-descripcion">Alitas de pollo fritas y sazonadas con salsa BBQ y picante.</p>
-                    <p class="producto-precio">$170.00</p>
-                </li>
-                <br>
-                <li>
-                    <h2>Hamburguesa</h2><br>
-                    <img class="imgcomida" src="imagenes/hamburguesas-mas-monchosas-de-cdmx.jpeg">
-                    <p class="producto-descripcion">Incluye una hamburguesa con doble carne de res acompañado de papas fritas crujientes.</p>
-                    <p class="producto-precio">$130.00</p>
-                </li>
-                <br>
-                <li>
-                    <h2>Sushi</h2>
-                    <img class="imgcomida" src="imagenes/sushi.jpg">
-                    <p class="producto-descripcion">Pariedad de rollos de sushi con ingredientes
-                         como salmón, atún, aguacate, pepino y arroz,</p>
-                    <p class="producto-precio">$90.00</p>
-                </li>
-            </ul>
-        </div>
-        <footer>
-            <img class="logo_footer" src="imagenes/logo.png">
-            <img class="logo_footer" src="imagenes/facebook.png">
-            <img class="logo_footer" src="imagenes/Instagram.png">
-            <p>@Copyright Poker Burguers - 2024</p>
-        </footer>
-    </body>
-    </html>
-   
+    <div>
+        <ul class="productos">
+            <li onclick="toggleActive(this)">
+                <h2>Hamburguesa</h2><br>
+                <img class="imgcomida" src="imagenes/hamburgesa_milanesa.png">
+                <p class="producto-descripcion"> Hamburguesa con carne de res, queso, lechuga, tomate y salsa especial.</p>
+                <p class="producto-precio">$90.00</p>
+            </li>
+            
+            <li onclick="toggleActive(this)">
+                <h2>Alitas de Pollo</h2> <br>
+                <img class="imgcomida" src="imagenes/alitas.jpg">
+                <p class="producto-descripcion">Alitas de pollo fritas y sazonadas con salsa BBQ y picante.</p>
+                <p class="producto-precio">$170.00</p>
+            </li>
+            
+            <li onclick="toggleActive(this)">
+                <h2>Hamburguesa</h2><br>
+                <img class="imgcomida" src="imagenes/hamburguesas-mas-monchosas-de-cdmx.jpeg">
+                <p class="producto-descripcion">Incluye una hamburguesa con doble carne de res acompañado de papas fritas crujientes.</p>
+                <p class="producto-precio">$130.00</p>
+            </li>
+            
+            <li onclick="toggleActive(this)">
+                <h2>Sushi</h2>
+                <img class="imgcomida" src="imagenes/sushi.jpg">
+                <p class="producto-descripcion">
+                    Pariedad de rollos de sushi con ingredientes
+                    como salmón, atún, aguacate, pepino y arroz,
+                </p>
+                <p class="producto-precio">$90.00</p>
+            </li>
+        </ul>
+    </div>
+    <footer>
+        <img class="logo_footer" src="imagenes/logo.png">
+        <img class="logo_footer" src="imagenes/facebook.png">
+        <img class="logo_footer" src="imagenes/Instagram.png">
+        <p>@Copyright Poker Burguers - 2024</p>
+    </footer>
+
+    <script>function toggleActive(productos) {
+    // Quitar la clase active de todos los elementos
+    document.querySelectorAll('.productos li').forEach(el => {
+    el.classList.remove('active');
+    });
+    // Añadir la clase active al elemento clicado
+    element.classList.add('active');
+    }</script>
+</body>
+</html>

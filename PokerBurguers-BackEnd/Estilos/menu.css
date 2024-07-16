@@ -1,21 +1,26 @@
-body{
+body {
     font-family: 'Montserrat', sans-serif;
-
 }
-header{
+
+header {
     background-color: #ffff00;
     text-align: center;
     padding: 1rem;
-
 }
-.logo{
+
+.logo {
     width: 80px;
     height: 80px;
+}
+.logo{
+    width: 150px;
+    height: 150px;
 }
 .logo_footer{
     width: 60px;
     height: 60px;
 }
+
 nav ul {
     list-style: none;
     text-decoration: none;
@@ -24,80 +29,86 @@ nav ul {
     justify-content: center;
     margin: 0 0 0 0;
 }
-nav ul li {
-    margin: 0 1rem;
+
+    nav ul li {
+        margin: 0 1rem;
+    }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #663300;
+            font-weight: bold;
+            display: block;
+            border-radius: 10px;
+            padding: 15px;
+        }
+
+nav ul li a:hover {
+background-color: #854200;
+color: white;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #663300;
-    font-weight: bold;
-    display: block;
-    border-radius: 10px;
-    padding: 15px;
-}
-    nav ul li a:hover{
-        background-color: #854200;
-        color: white;
-        transition: 0.4s;
-    }
-nav a:hover{
+nav a:hover {
     color: #c78c19;
     text-decoration: underline;
+    transition: steps(1, start);
 }
-.productos{
+
+.productos {
+    width: auto;
+    height: auto;
+    position: relative;
     display: flex;
     margin: 0 auto;
     padding: 50px;
     background-color: #f3dbc3;
 }
-.productos li{
-    background-color: #ff4800;
-    text-align: center;
-    width: 20%;
-    height: auto;
-    margin: 1.5%;
-    padding: 30px 20px;
-    box-sizing:border-box;
-    border: 5px solid #000000;
-    border-radius: 50px;
+
+.productos li {
+ background-color: #ff4800;
+ text-align: center;
+ width: 20%;
+ height: auto;
+ margin: 1.5%;
+ padding: 30px 20px;
+ box-sizing: border-box;
+ border: 5px solid #000000;
+ border-radius: 50px;
 }
-.imgcomida{
+
+.productos li:hover, .productos li.active {
+  transform: scale(1.2);
+  box-shadow: 0 0 0 2000px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+
+.imgcomida {
     width: 130px;
     height: 130px;
     margin: 2%;
     box-sizing: border-box;
-    border: 7px #000000 solid;
-    border-radius: 10px;
+    border-radius: 30%;
 }
-.imgcomida:hover{
-    width: 180px;
-    height: 180px;
-    border: #ffff00 7px solid;
-}
-.productos li:hover{
+
+.productos li:hover {
     border-color: #d90909;
-    
 }
-.productos li:active{
-    border-color:#07901a;
-}
-.productos h2{
-    font-size: 30px ;
+
+.productos h2 {
+    font-size: 30px,;
     font-weight: bold;
 }
-.productos li:hover h2{
-    font-size: 35px;
-    color:#ffff00;
+
+.productos li.p:hover h2 {
+    color: #ffff00;
 }
-.productos li:hover p{
-    color:#ffff00;
-}
-.producto-descripcion{
+
+.producto-descripcion {
     font-size: 18px;
 }
 
-.producto-precio{
+.producto-precio {
     font-size: 20px;
     font-weight: bold;
     margin-top: 5px;
@@ -110,8 +121,9 @@ footer {
     padding: 1rem;
     margin-top: 2rem;
 }
-.copyright{
-    color:#FFFFFF;
+
+.copyright {
+    color: #FFFFFF;
     font-size: 13px;
-    margin: 20px;
+    margin:20px;
 }
