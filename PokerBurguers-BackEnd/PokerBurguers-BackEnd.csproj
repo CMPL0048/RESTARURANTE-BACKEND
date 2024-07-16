@@ -82,27 +82,17 @@
     <Content Include="imagenes\ima1.jpg" />
     <Content Include="imagenes\Instagram.png" />
     <Content Include="imagenes\LMS1.jpg" />
-    <Content Include="imagenes\logo.jpg" />
-    <Content Include="imagenes\logo.png" />
     <Content Include="imagenes\logo2.png" />
     <Content Include="imagenes\LSM2.jpg" />
     <Content Include="imagenes\LSM3.jpg" />
     <Content Include="imagenes\sushi.jpg" />
     <Content Include="index.html" />
     <Content Include="menu_pokerburgers.html" />
-    <Content Include="Precios.aspx" />
     <Content Include="reset.css" />
     <Content Include="sucursales.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Precios.aspx.cs">
-      <DependentUpon>Precios.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Precios.aspx.designer.cs">
-      <DependentUpon>Precios.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
