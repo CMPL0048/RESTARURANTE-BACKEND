@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>PockerBurgers - Menu</title>
-        <link rel="icon" type="image/x-icon" href="imagenes/icono.ico">
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="Estilos/menu.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>PockerBurgers - Menu</title>
+    <link rel="icon" type="image/x-icon" href="imagenes/icono.ico">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="Estilos/menu.css">
+    <script src="https://kit.fontawesome.com/35a8789608.js" crossorigin="anonymous"></script>
+</head>
     <body>
         <header>
             <img class="logo" src="imagenes/logo2.png">
@@ -30,7 +31,8 @@
                 <img class="imgcomida" src="imagenes/hamburgesa_milanesa.png">
                 <p class="producto-descripcion"> Hamburguesa con carne de res, queso, lechuga, tomate y salsa especial.</p>
                 <p class="producto-precio">$90.00</p>
-                <button>Comprar</button>
+                <button class="buton"><span>Comprar</span></button>
+                <button class="carrito"><i class="fa-solid fa-cart-shopping"></i></button>
             </li>
             
             <li onclick="toggleActive(this)">
@@ -38,7 +40,8 @@
                 <img class="imgcomida" src="imagenes/alitas.jpg">
                 <p class="producto-descripcion">Alitas de pollo fritas y sazonadas con salsa BBQ y picante.</p>
                 <p class="producto-precio">$170.00</p>
-                <button>Comprar</button>
+                <button class="buton"><span>Comprar</span></button>
+                <button class="carrito"><i class="fa-solid fa-cart-shopping"></i></button>
             </li>
             
             <li onclick="toggleActive(this)">
@@ -46,9 +49,9 @@
                 <img class="imgcomida" src="imagenes/hamburguesas-mas-monchosas-de-cdmx.jpeg">
                 <p class="producto-descripcion">Incluye una hamburguesa con doble carne de res acompañado de papas fritas crujientes.</p>
                 <p class="producto-precio">$130.00</p>
-                <button>Comprar</button>
-            </li>
-            
+                <button class="buton">comprar</button>
+                <button class="carrito"><i class="fa-solid fa-cart-shopping"></i></button>
+
             <li onclick="toggleActive(this)">
                 <h2>Sushi</h2>
                 <img class="imgcomida" src="imagenes/sushi.jpg">
@@ -57,7 +60,8 @@
                     como salmón, atún, aguacate, pepino y arroz,
                 </p>
                 <p class="producto-precio">$90.00</p>
-                <button>"Comprar"</button>
+                <button class="buton"><span>Comprar</span></button>
+                <button class="carrito"><i class="fa-solid fa-cart-shopping"></i></button>
             </li>
         </ul>
     </div>

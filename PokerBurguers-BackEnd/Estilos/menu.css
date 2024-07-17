@@ -55,6 +55,8 @@ nav a:hover {
 }
 
 .productos {
+    justify-content:center;
+    align-items:center;
     width: auto;
     height: auto;
     position: relative;
@@ -64,33 +66,34 @@ nav a:hover {
     background-color: #f3dbc3;
 }
 
-.productos li {
- background-color: #ff4800;
- text-align: center;
- width: 20%;
- height: auto;
- margin: 1.5%;
- padding: 30px 20px;
- box-sizing: border-box;
- border: 5px solid #000000;
- border-radius: 50px;
-}
+    .productos li {
+        position: relative;
+        background-color: #ff4800;
+        width: 20%;
+        height: auto;
+        margin: 1.5%;
+        padding: 30px 20px;
+        box-sizing: border-box;
+        border: 5px solid #000000;
+        border-radius: 50px;
+        transition: all ease 1s;
+        background: linear-gradient(to top left,black, red)
+    }
 
-.productos li:hover, .productos li.active {
-  transform: scale(1.2);
-  box-shadow: 0 0 0 2000px rgba(0, 0, 0, 0.5);
-  z-index: 10;
-}
-.productos button{
-    padding-top: 20px;
-    background-color:darkolivegreen;
-}
+        .productos li:hover, .productos li.active {
+            transform: scale(1.2);
+            box-shadow: 0 0 0 2000px rgba(0, 0, 0, 0.5);
+            z-index: 10;
+        }
+    .productos p.li:hover {
+        color: #ffff00;
+    }
 .imgcomida {
-    width: 130px;
-    height: 130px;
+    width: 180px;
+    height: 140px;
     margin: 2%;
     box-sizing: border-box;
-    border-radius: 30%;
+    border:solid 4px;
 }
 
 .productos li:hover {
@@ -98,23 +101,36 @@ nav a:hover {
 }
 
 .productos h2 {
-    font-size: 30px,;
+    font-size: 30px;
     font-weight: bold;
-}
-
-.productos li.p:hover h2 {
-    color: #ffff00;
 }
 
 .producto-descripcion {
     font-size: 18px;
+    color:mintcream;
 }
 
 .producto-precio {
     font-size: 20px;
     font-weight: bold;
     margin-top: 5px;
+    padding: 10px;
+    color: mintcream;
 }
+.buton {
+    height: 50px;
+    width: 80px;
+    background-color: black;
+    color: mintcream;
+    border: none;
+    text-align:center;
+    transition: ease 1s;
+    border-radius:10px;
+}
+.buton:hover{
+    background-color:sienna;
+}
+
 
 footer {
     background-color: #663300; /* Color secundario */
