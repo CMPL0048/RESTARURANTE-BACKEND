@@ -55,35 +55,34 @@ nav a:hover {
 }
 
 .productos {
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
     width: auto;
     height: auto;
     position: relative;
     display: flex;
     margin: 0 auto;
     padding: 50px;
-    background-color: #f3dbc3;
+    background: linear-gradient(to top left, #000000,#ffff00)
 }
 
     .productos li {
         position: relative;
-        background-color: #ff4800;
         width: 20%;
         height: auto;
         margin: 1.5%;
         padding: 30px 20px;
         box-sizing: border-box;
-        border: 5px solid #000000;
         border-radius: 50px;
         transition: all ease 1s;
-        background: linear-gradient(to top left,black, red)
+        background: linear-gradient(to top left,#884E00,#ffff00)
     }
 
         .productos li:hover, .productos li.active {
             transform: scale(1.2);
             box-shadow: 0 0 0 2000px rgba(0, 0, 0, 0.5);
             z-index: 10;
+            border:none;
         }
     .productos p.li:hover {
         color: #ffff00;
@@ -103,6 +102,7 @@ nav a:hover {
 .productos h2 {
     font-size: 30px;
     font-weight: bold;
+    color:mintcream;
 }
 
 .producto-descripcion {
