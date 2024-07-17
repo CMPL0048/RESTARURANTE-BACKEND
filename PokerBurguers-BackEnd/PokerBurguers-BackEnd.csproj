@@ -75,6 +75,7 @@
     <Content Include="Estilos\sucursales.css" />
     <Content Include="imagenes\alitas.jpg" />
     <Content Include="imagenes\cafe footer.jpg" />
+    <Content Include="imagenes\carrito-de-compras.png" />
     <Content Include="imagenes\facebook.png" />
     <Content Include="imagenes\hamburgesa_milanesa.png" />
     <Content Include="imagenes\hamburguesas-mas-monchosas-de-cdmx.jpeg" />
