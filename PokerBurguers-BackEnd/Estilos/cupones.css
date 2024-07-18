@@ -1,116 +1,144 @@
+
 body {
     font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f3dbc3; 
-    color: #663300; 
+    background-color: #f3dbc3;
+    color: #663300;
 }
 
 header {
-    background-color: #ffff00; 
+    background-color: #ffff00;
     text-align: center;
     padding: 1rem;
 }
 
-header h1 {
-    font-family: "Monserrat",sans-serif;
-    margin: 0;
-    color: #663300; 
-}
+    header h1 {
+        font-family: "Monserrat",sans-serif;
+        margin: 0;
+        color: #663300;
+    }
 
 nav {
     display: flex;
-    justify-content: center; 
-    
+    justify-content: center;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center; 
-    margin: 0;
-}
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
 
-nav ul li {
-    margin: 0 1rem;
-}
+        nav ul li {
+            margin: 0 1rem;
+        }
 
-nav ul li a {
-    text-decoration: none;
-    color: #663300;
-    font-weight: bold;
-    display: block;
-    border-radius: 10px;
-    padding: 15px;
-}
+            nav ul li a {
+                text-decoration: none;
+                color: #663300;
+                font-weight: bold;
+                display: block;
+                border-radius: 10px;
+                padding: 15px;
+            }
 
-nav ul li a:hover {
-    background-color: #854200;
-    color: white;
-    transition: 0.4s;
-}
+                nav ul li a:hover {
+                    background-color: #854200;
+                    color: white;
+                    transition: 0.4s;
+                }
 
 main {
-    display: flex;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 2rem;
     padding: 2rem;
 }
 
 section {
     margin: 0 1rem;
-    background-color: #fff; 
+    background-color: #fff;
     padding: 1rem;
     border-radius: 8px;
-    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .cupones h2, .novedades h2 {
     font-family: '  Monserrat', sans-serif;
     text-align: center;
-    color: #663300; 
+    color: #663300;
+    margin-bottom: 1rem;
 }
 
+.cupones-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+}
 
 .cupon {
-    background-color: #f3dbc3; 
+    background-color: #f3dbc3;
     padding: 1rem;
     border-radius: 8px;
     text-align: center;
     border: 1px solid #663300;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
 }
+
+    .cupon:hover {
+        transform: scale(1.05);
+    }
+
+    .cupon h3 {
+        margin-top: 0;
+        color: #854200;
+    }
+
+    .cupon p {
+        margin: 0.5rem 0;
+    }
 
 .novedad_detalle h3 {
     font-family: "Monserrarat",sans-serif;
     text-align: center;
-    color: #663300; 
+    color: #663300;
+    margin-bottom: 1rem;
 }
 
 .novedad_detalle img {
     display: block;
     height: auto;
-    margin: 0 auto; 
+    width: 50%;
+    margin: 0 auto;
     border-radius: 8px;
     margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 
 footer {
-    background-color: #663300; /* Color secundario */
+    background-color: #663300;
     color: #fff;
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
 }
 
-footer p {
-    margin: 0;
-}
+    footer p {
+        margin: 0;
+    }
 
 .logo {
     width: 80px;
     height: 80px;
 }
-.logo_footer{
+
+.logo_footer {
     width: 60px;
     height: 60px;
 }

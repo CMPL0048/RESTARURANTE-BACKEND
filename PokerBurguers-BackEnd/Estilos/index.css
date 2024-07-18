@@ -97,9 +97,6 @@ footer p {
     border: 7px #663300 solid;
     border-radius: 10px;
     margin-left: 10px;
-<<<<<<< HEAD
-}
-=======
 }
 /*SLIDER */
 .carrusel {
@@ -132,4 +129,3 @@ footer p {
         70% {margin-left: -200%;}
         100% {margin-left: -200%;}
     }
->>>>>>> parent of 44eca27 (Modifiacion del CSS de Index)
