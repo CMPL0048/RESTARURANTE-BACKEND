@@ -1,16 +1,16 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
 body{
     font-family: 'Montserrat', sans-serif;
+
 
 }
 header{
     background-color: #ffff00;
     text-align: center;
     padding: 1rem;
-
-}
-.logo{
-    width: 150px;
-    height: 150px;
 }
 .logo_footer{
     width: 60px;
@@ -24,6 +24,24 @@ nav ul {
     justify-content: center;
     margin: 0 0 0 0;
 }
+
+
+    nav ul li {
+        margin: 0 1rem;
+    }
+
+nav ul li a {
+  text-decoration: none;
+  color: #663300;
+  font-weight: bold;
+  display: block;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+nav ul li a:hover {
+background-color: #854200;
+color: white;
 nav ul li {
     margin: 0 1rem;
 }
@@ -44,8 +62,35 @@ nav ul li a {
 nav a:hover{
     color: #c78c19;
     text-decoration: underline;
-    transition :steps(1, start);
+    transition :steps(1, start); 
+  }
+
+.productos {
+    width: auto;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+    padding: 50px;
+    background: linear-gradient( #000000,#ffff00,#000000); 
 }
+
+.productos li {
+  padding: 20px 20px;
+  width: 30%;
+  height: auto;
+  margin: 1.5%;
+  box-sizing: border-box;
+  border-radius: 50px;
+  transition: all ease 1s;
+  background: linear-gradient(to top left,#884E00,#ffff00);
+}
+
+.productos li:hover, .productos li.active{
+  transform: scale(1);
+  box-shadow: 0 0 0 2000px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  border:none;
+  }
 .productos{
     width:auto;
     height:auto;
@@ -73,13 +118,16 @@ nav a:hover{
     transform: scale(1.2);
     box-shadow: 0 0 0 2000px rgba(0, 0, 0, 0.5);
     z-index: 10;
-
 }
 
 .imgcomida {
     width: 130px;
     height: 130px;
     margin: 2%;
+
+    border-radius:8px;
+}
+
     box-sizing:border-box;
     border-radius:30%;
 }
@@ -89,9 +137,11 @@ nav a:hover{
     
 }
 
+
 .productos h2{
     font-size: 30px, ;
     font-weight: bold;
+    color:#000000;
 }
 
 .productos li.p:hover h2{
@@ -99,12 +149,42 @@ nav a:hover{
 }
 .producto-descripcion{
     font-size: 18px;
+    color: #000000;
 }
 
 .producto-precio{
     font-size: 20px;
     font-weight: bold;
     margin-top: 5px;
+    padding: 10px;
+    color: #000000;
+}
+
+.boton {
+    height: 50px;
+    width: 70px;
+    background-color: black;
+    color: mintcream;
+    border: none;
+    text-align: center;
+    transition: ease 0.5s;
+    border-radius: 10px;
+}
+
+.boton:hover{
+    background-color:sienna;
+}
+.boton:active{
+    height:45px;
+    width:70px;
+}
+
+.carrito {
+    height: 50px;
+    width: 70px;
+    background-color: #ffffff;
+    border: none;
+    border-radius:10px;
 }
 
 footer {
@@ -112,7 +192,6 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem;
-    margin-top: 2rem;
 }
 .copyright{
     color:#FFFFFF;
