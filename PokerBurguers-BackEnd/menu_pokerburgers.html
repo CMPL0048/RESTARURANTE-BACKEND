@@ -2,11 +2,12 @@
 
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>Pocker Burgers - Menu</title>
+    <meta charset="UTF-8">
+    <title>PockerBurgers - Menu</title>
     <link rel="icon" type="image/x-icon" href="imagenes/icono.ico">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="Estilos/menu.css">
+    <script src="https://kit.fontawesome.com/35a8789608.js" crossorigin="anonymous"></script>
 </head>
     <body>
         <header>
@@ -23,21 +24,6 @@
                 </nav>
             </div>
         </header>
-<body>
-    <header>
-        <img class="logo" src="imagenes/logo.png">
-        <div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="">Menú</a></li>
-                    <li><a href="">Pedir en línea</a></li>
-                    <li><a href="sucursales.html">Sucursales</a></li>
-                    <li><a href="cupones.html">Cupones</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
     <div>
         <ul class="productos">
             <li onclick="toggleActive(this)">
@@ -48,7 +34,7 @@
                 <button class="boton">Comprar</button>
                 <button class="carrito"><i class="fa-solid fa-cart-plus"></i></button>
             </li>
-            <br>
+            
             <li onclick="toggleActive(this)">
                 <h2>Alitas de Pollo</h2> <br>
                 <img class="imgcomida" src="imagenes/alitas.jpg">
@@ -57,7 +43,7 @@
                 <button class="boton">Comprar</button>
                 <button class="carrito"><i class="fa-solid fa-cart-plus"></i></button>
             </li>
-            <br>
+            
             <li onclick="toggleActive(this)">
                 <h2>Hamburguesa</h2><br>
                 <img class="imgcomida" src="imagenes/hamburguesas-mas-monchosas-de-cdmx.jpeg">
@@ -68,8 +54,7 @@
                 <button class="boton">Comprar</button>
                 <button class="carrito"><i class="fa-solid fa-cart-plus"></i></button>
             </li>
-            </li>
-            <br>
+
             <li onclick="toggleActive(this)">
                 <h2>Sushi</h2>
                 <img class="imgcomida" src="imagenes/sushi.jpg">
@@ -88,9 +73,9 @@
         <img class="logo_footer" src="imagenes/logo.png">
         <img class="logo_footer" src="imagenes/facebook.png">
         <img class="logo_footer" src="imagenes/Instagram.png">
-        <img class="logo_footer" src="imagenes/Instagram.png">
         <p>@Copyright Poker Burguers - 2024</p>
     </footer>
+
     <script> function toggleActive(productos) {
             // Quitar la clase active de todos los elementos
             document.querySelectorAll('.productos li').forEach(el => {
@@ -100,5 +85,6 @@
             element.classList.add('active');
              }
    </script>
-</body>
+
+    </body>
 </html>
