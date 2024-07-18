@@ -25,11 +25,12 @@ body {
     font-size: 20px;
 }
 .banner {
-    width: 100%;
+    width: 1863px;
     margin-left: 0px;
     overflow: hidden;
     padding: 0px;
     float: left;
+    border-radius: 8px;
     }
 nav ul {
     list-style: none;
@@ -60,6 +61,12 @@ main {
     justify-content: space-around;
     padding: 2rem;
 }
+
+section {
+    flex: 1;
+    margin: 0 1rem;
+    max-width: 1863px;
+}
 section {
     flex: 1;
     margin: 0 1rem;
@@ -85,6 +92,7 @@ footer p {
 }
 .listacotn{
     align-items: center;
+    margin: 0  auto;
 }
 .imgcont{
     align-items: center;
@@ -93,31 +101,31 @@ footer p {
     height: 400px;
     margin: 2%;
     box-sizing: border-box;
-    border: 7px #663300 solid;
-    border-radius: 10px;
-    margin-left: 10px;
+    border: 8px #663300 solid;
+    border-radius: 20px;
+    margin-left: 20px;
 }
 /*SLIDER */
-.carrusel {
-    width: 1200px;
+.container {
+    width: 100vh;
     height: auto;
-    overflow: hidden;
-    margin: 0 auto auto;
-    animation: slide 15s infinite alternate ease-in-out;
+    display: grid;
+    place-content: center;
+    margin: 0 auto;
 }
-    .carrusel ul{
+.slide{
+    width: 1200px;
+    height: 720px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+    .slide ul{
         display: flex;
         padding: 0px;
         width: 400%;
+        animation: alternate 10s infinite cubic-bezier(0.55,0.48,0.37,0.92);
     }
-    .carrusel li{
-        width: 100%;
-        list-style: none;
-    }
-    .carrusel img{
-        width: 100%;
-        height: auto;
-    }
+
     @keyframes slide {
         0% {margin-left: 0;}
         30% {margin-left: 0;}
