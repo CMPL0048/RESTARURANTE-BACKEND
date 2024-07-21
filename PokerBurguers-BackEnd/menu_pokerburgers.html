@@ -38,7 +38,7 @@
 
             <li onclick="toggleActive(this)">
                 <h2>Alitas de Pollo</h2> <br>
-                <button onclick="togglefav()" id="botonfav" class="bo-fav"><i id="a" class="fa-solid fa-heart"></i> </button>
+                <button onclick="togglefav2()" id="botonfav2" class="bo-fav"><i id="a2" class="fa-solid fa-heart"></i> </button>
                 <img class="imgcomida" src="imagenes/alitas.jpg">
                 <p class="producto-descripcion">Alitas de pollo fritas y sazonadas con salsa BBQ y picante.</p>
                 <p class="producto-precio">$170.00</p><br />
@@ -48,7 +48,7 @@
 
             <li onclick="toggleActive(this)">
                 <h2>Hamburguesa</h2><br>
-                <button onclick="togglefav()" id="botonfav" class="bo-fav"><i id="a" class="fa-solid fa-heart"></i> </button>
+                <button onclick="togglefav3()" id="botonfav3" class="bo-fav"><i id="a3" class="fa-solid fa-heart"></i> </button>
                 <img class="imgcomida" src="imagenes/hamburguesas-mas-monchosas-de-cdmx.jpeg">
                 <p class="producto-descripcion">Incluye una hamburguesa con doble carne de res acompañado de papas fritas crujientes.</p>
                 <p class="producto-precio">$130.00</p><br />
@@ -57,7 +57,7 @@
 
             <li onclick="toggleActive(this)">
                 <h2>Sushi</h2><br>
-                <button onclick="togglefav()" id="botonfav" class="bo-fav"><i id="a" class="fa-solid fa-heart"></i> </button>
+                <button onclick="togglefav4()" id="botonfav4" class="bo-fav"><i id="a4" class="fa-solid fa-heart"></i> </button>
                 <img class="imgcomida" src="imagenes/sushi.jpg">
                 <p class="producto-descripcion">
                     Pariedad de rollos de sushi con ingredientes
@@ -89,7 +89,13 @@
     </script>
     <script>
         var btnfav = document.getElementById('botonfav');
-        var btnfav = document.getElementById('a');
+        var a = document.getElementById('a');
+        var btnfav2 = document.getElementById('botonfav2');
+        var a2 = document.getElementById('a2');
+        var btnfav3 = document.getElementById('botonfav3');
+        var a3 = document.getElementById('a3');
+        var btnfav4 = document.getElementById('botonfav4');
+        var a4 = document.getElementById('a4');
 
         function togglefav() {
             if (btnfav.style.color == "red") {
@@ -100,7 +106,46 @@
             }
             else {
                 btnfav.style.color = "red"
-                a.style.transform = "scale(1.5)";
+                a.style.transform = "scale(1.2)";
+            }
+        }
+
+        function togglefav2() {
+            if (btnfav2.style.color == "red") {
+                a2.style.fontSize = "30px"
+                btnfav2.style.color = "grey"
+                a2.style.transform = "none";
+
+            }
+            else {
+                btnfav2.style.color = "red"
+                a2.style.transform = "scale(1.2)";
+            }
+        }
+
+        function togglefav3() {
+            if (btnfav3.style.color == "red") {
+                a3.style.fontSize = "30px"
+                btnfav3.style.color = "grey"
+                a3.style.transform = "none";
+
+            }
+            else {
+                btnfav3.style.color = "red"
+                a3.style.transform = "scale(1.2)";
+            }
+        }
+
+        function togglefav4() {
+            if (btnfav4.style.color == "red") {
+                a4.style.fontSize = "30px"
+                btnfav4.style.color = "grey"
+                a4.style.transform = "none";
+
+            }
+            else {
+                btnfav4.style.color = "red"
+                a4.style.transform = "scale(1.2)";
             }
         }
     </script>
