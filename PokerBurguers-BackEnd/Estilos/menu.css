@@ -18,40 +18,32 @@ header {
     width: 60px;
     height: 60px;
 }
-
+/*Navegacion*/
 nav ul {
     list-style: none;
-    text-decoration: none;
     padding: 0;
     display: flex;
     justify-content: center;
     margin: 0 0 0 0;
 }
-
-    nav ul li {
-        margin: 0 1rem;
-    }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #663300;
-            font-weight: bold;
-            display: block;
-            border-radius: 10px;
-            padding: 15px;
-        }
+nav ul li {
+    margin: 0 1rem;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #663300;
+    font-weight: bold;
+    display: block;
+    border-radius: 10px;
+    padding: 15px;
+}
 
 nav ul li a:hover {
-background-color: #854200;
-color: white;
+    background-color: #854200;
+    color: white;
+    transition: 0.4s;
 }
-
-nav a:hover {
-    color: #c78c19;
-    text-decoration: underline;
-    transition: steps(1, start);
-}
-
+/*Body*/
 .productos {
     position:absolute;
     justify-content: center;
@@ -128,7 +120,7 @@ nav a:hover {
 .buton:hover{
     background-color:sienna;
 }
-
+/*Footer*/
 footer {
     background-color: #663300; /* Color secundario */
     color: #fff;

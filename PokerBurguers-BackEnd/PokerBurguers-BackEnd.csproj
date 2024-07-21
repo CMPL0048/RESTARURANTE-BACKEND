@@ -67,6 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Alta_usuario.aspx" />
+    <Content Include="Autentificacion.aspx" />
     <Content Include="banner\banner.jpg" />
     <Content Include="cupones.html" />
     <Content Include="Estilos\cupones.css" />
@@ -95,6 +97,20 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alta_usuario.aspx.cs">
+      <DependentUpon>Alta_usuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Alta_usuario.aspx.designer.cs">
+      <DependentUpon>Alta_usuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Autentificacion.aspx.cs">
+      <DependentUpon>Autentificacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Autentificacion.aspx.designer.cs">
+      <DependentUpon>Autentificacion.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
