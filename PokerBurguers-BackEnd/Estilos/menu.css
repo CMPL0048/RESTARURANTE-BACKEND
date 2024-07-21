@@ -102,11 +102,17 @@ nav a:hover {
 }
 .bo-fav {
     position: absolute;
-    color:#000000;
+    display:flex;
+    color:grey;
     border: none;
     background: none;
-    font-size: 35px;
+    font-size: 30px;
 }
+.fa-heart {
+    position: absolute;
+    left: 2px;
+}
+
 .producto-descripcion {
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;

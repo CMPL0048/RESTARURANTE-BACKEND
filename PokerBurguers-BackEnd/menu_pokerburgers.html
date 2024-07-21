@@ -28,7 +28,7 @@
         <ul class="productos">
             <li onclick="toggleActive(this)">
                 <h2>Hamburguesa</h2><br>
-                <button onclick="Tog" class="bofav"><i class="fa-solid fa-heart"></i> </button>
+                <button onclick="togglefav()" id="botonfav" class="bo-fav"><i id="a" class="fa-solid fa-heart"></i> </button>
                 <img class="imgcomida" src="imagenes/hamburgesa_milanesa.png">
                 <p class="producto-descripcion"> Hamburguesa con carne de res, queso, lechuga, tomate y salsa especial.</p>
                 <p class="producto-precio">$90.00</p><br/>
@@ -38,7 +38,7 @@
 
             <li onclick="toggleActive(this)">
                 <h2>Alitas de Pollo</h2> <br>
-                <button id="botonfav" class="bo-fav"><i class="fa-solid fa-heart"></i></button>
+                <button onclick="togglefav()" id="botonfav" class="bo-fav"><i id="a" class="fa-solid fa-heart"></i> </button>
                 <img class="imgcomida" src="imagenes/alitas.jpg">
                 <p class="producto-descripcion">Alitas de pollo fritas y sazonadas con salsa BBQ y picante.</p>
                 <p class="producto-precio">$170.00</p><br />
@@ -48,7 +48,7 @@
 
             <li onclick="toggleActive(this)">
                 <h2>Hamburguesa</h2><br>
-                <button id="botonfav" class="bo-fav"><i class="fa-solid fa-heart"></i></button>
+                <button onclick="togglefav()" id="botonfav" class="bo-fav"><i id="a" class="fa-solid fa-heart"></i> </button>
                 <img class="imgcomida" src="imagenes/hamburguesas-mas-monchosas-de-cdmx.jpeg">
                 <p class="producto-descripcion">Incluye una hamburguesa con doble carne de res acompañado de papas fritas crujientes.</p>
                 <p class="producto-precio">$130.00</p><br />
@@ -57,7 +57,7 @@
 
             <li onclick="toggleActive(this)">
                 <h2>Sushi</h2><br>
-                <button id="botonfav" class="bo-fav"><i class="fa-solid fa-heart"></i></button>
+                <button onclick="togglefav()" id="botonfav" class="bo-fav"><i id="a" class="fa-solid fa-heart"></i> </button>
                 <img class="imgcomida" src="imagenes/sushi.jpg">
                 <p class="producto-descripcion">
                     Pariedad de rollos de sushi con ingredientes
@@ -84,10 +84,25 @@
                 el.classList.remove('active');
             });
             // Añadir la clase active al elemento clicado
-            element.classList.add('active');
-        }</script>
+        element.classList.add('active');
+        }
+    </script>
     <script>
-        var btnfav = document.getElementById(botonfav)
+        var btnfav = document.getElementById('botonfav');
+        var btnfav = document.getElementById('a');
+
+        function togglefav() {
+            if (btnfav.style.color == "red") {
+                a.style.fontSize = "30px"
+                btnfav.style.color = "grey"
+                a.style.transform = "none";
+
+            }
+            else {
+                btnfav.style.color = "red"
+                a.style.transform = "scale(1.5)";
+            }
+        }
     </script>
 </body>
 </html>
