@@ -62,15 +62,15 @@ nav a:hover {
 }
 
     .productos li {
-        position:relative;
         padding: 20px;
         width: 20%;
-        height: 40%;
+        height: 30%;
         margin: 1.5%;
         box-sizing: border-box;
         border-radius: 50px;
         transition: all ease .5s;
-        background: linear-gradient(to top left,#884E00,#ffff00)
+        background: linear-gradient(to top left,#884E00,#ffff00);
+        
     }
 
         .productos li:hover, .productos li.active {
@@ -85,11 +85,12 @@ nav a:hover {
     }
 
 .imgcomida {
-    width: 180px;
-    height: 160px;
+    width: 140px;
+    height: 100px;
     margin: 2%;
     box-sizing: border-box;
     border-radius: 10px;
+    box-shadow: 10px 10px;
 }
 
 
@@ -101,9 +102,10 @@ nav a:hover {
     color: #000000;
 }
 .bo-fav {
+    cursor:pointer;
     position: absolute;
     display:flex;
-    color:grey;
+    color:#000000;
     border: none;
     background: none;
     font-size: 30px;
@@ -114,6 +116,7 @@ nav a:hover {
 }
 
 .producto-descripcion {
+    padding-top:10%;
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-style: normal;
@@ -125,26 +128,31 @@ nav a:hover {
     font-size: 20px;
     font-weight: bold;
     margin-top: 5px;
-    padding: 10px;
+    padding: 5px;
     color: #000000;
-    border-top: solid 4px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 15px;
+    border-top: solid 6px;
     border-bottom: solid 4px;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    /**/
 }
 
 .buton {
     height: 50px;
-    width: 80px;
-    background-color: black;
+    width: 80px; 
+    background-color: #000000;
     color: mintcream;
     border: none;
     text-align: center;
     transition: ease .3s;
     border-radius: 10px;
     cursor:pointer;
+    margin-right:10px;
 }
     .buton:active {
-        height: 55px;
-        width: 85px;
+        transform:scale(1.1);
         border: none;
         background-color: #CA7A44;
     }
@@ -152,14 +160,14 @@ nav a:hover {
 .carrito {
     height: 50px;
     width: 80px;
-    border:none;
+    border: none;
     border-radius: 10px;
-    transition:ease .3s;
-    cursor:pointer;
+    transition: ease .3s;
+    cursor: pointer;
+    margin-left: 10px;
 }
     .carrito:active {
-        height: 55px;
-        width: 85px;
+        transform:scale(1.1);
         border: none;
         color:aliceblue;
         background-color:#000000;
