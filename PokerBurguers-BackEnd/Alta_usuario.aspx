@@ -87,7 +87,7 @@
                         <asp:TextBox ID="tbNumeroCasa" runat="server"></asp:TextBox>
                </td>
                <td>
-                   <asp:Label ID="lbCodigoPostal" runat="server" Text="Código Postal"></asp:Label>
+                   <asp:Label ID="lbCodigoPostal" runat="server" Text="CódigoPostal"></asp:Label>
                </td>
                <td>
                         <asp:TextBox ID="tbCodigoPostal" runat="server"></asp:TextBox>

@@ -45,10 +45,10 @@ namespace PokerBurguers_BackEnd
                 referencias = lbReferencias.Text;
 
                 //Proceso de inserción del usuario en la tabla "Alta_usuario"
-                SQLInsert = string.Format("Insert into Alta_usuario(nombre, apellido_p, apellido_m, correo, sexo, telefono, calle, colonia, numerodecasa, codigopostal, referencias)" +
+                SQLInsert = string.Format("Insert into Alta_usuario( nombre, apellido_p, apellido_m, correo, sexo, telefono, calle, colonia, numerodecasa, codigopostal, referencias)" +
                 "VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}')",nombre,apellido_p,apellido_m,correo,sexo,telefono,calle,colonia,numerodecasa,codigopostal,referencias);
                 SQLcmd.CommandText = SQLInsert;
-                SQLcmd.ExecuteNonQuery();//Ejecuta el insert dentro del managment
+                SQLcmd.ExecuteNonQuery();
 
                 //Si el querry se ejecuta de manera exitosa mandara el siguiente mensaje "Usuario registrado con exito"
                 string script = "alert('Usuario registrado con exito');";

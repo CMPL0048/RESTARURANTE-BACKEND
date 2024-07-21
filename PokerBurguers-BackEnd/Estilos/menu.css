@@ -1,4 +1,3 @@
-
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -14,123 +13,178 @@ header {
     height: 80px;
 }
 
-.logo_footer{
+.logo_footer {
     width: 60px;
     height: 60px;
 }
-/*Navegacion*/
+
 nav ul {
     list-style: none;
+    text-decoration: none;
     padding: 0;
     display: flex;
     justify-content: center;
     margin: 0 0 0 0;
 }
-nav ul li {
-    margin: 0 1rem;
-}
-nav ul li a {
-    text-decoration: none;
-    color: #663300;
-    font-weight: bold;
-    display: block;
-    border-radius: 10px;
-    padding: 15px;
+
+    nav ul li {
+        margin: 0 1rem;
+    }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #663300;
+            font-weight: bold;
+            display: block;
+            border-radius: 10px;
+            padding: 15px;
+        }
+
+            nav ul li a:hover {
+                background-color: #854200;
+                color: white;
+            }
+
+nav a:hover {
+    color: #c78c19;
+    text-decoration: underline;
+    transition: steps(1, start);
 }
 
-nav ul li a:hover {
-    background-color: #854200;
-    color: white;
-    transition: 0.4s;
-}
-/*Body*/
 .productos {
-    position:absolute;
     justify-content: center;
     align-items: center;
     width: auto;
     height: auto;
     display: flex;
     margin: 0 auto;
-    padding: 50px;
-    background: linear-gradient(to top left, #000000,#ffff00)
+    background: linear-gradient(to left, #000000,#ffff00, #000000)
 }
 
     .productos li {
-        position:relative;
-        padding: 20px 20px;
-        width: auto;
-        height: auto;
+        padding: 20px;
+        width: 20%;
+        height: 30%;
         margin: 1.5%;
         box-sizing: border-box;
         border-radius: 50px;
-        transition: all ease 1s;
-        background: linear-gradient(to top left,#884E00,#ffff00)
+        transition: all ease .5s;
+        background: linear-gradient(to top left,#884E00,#ffff00);
     }
 
         .productos li:hover, .productos li.active {
             transform: scale(1.2);
             box-shadow: 0 0 0 2000px rgba(0, 0, 0, 0.5);
             z-index: 10;
-            border:none;
+            border: none;
         }
+
     .productos p.li:hover {
         color: #ffff00;
     }
+
 .imgcomida {
-    width: 180px;
-    height: 140px;
+    width: 140px;
+    height: 100px;
     margin: 2%;
     box-sizing: border-box;
-    border:solid 4px;
+    border-radius: 10px;
+    box-shadow: 10px 10px;
 }
 
-.productos li:hover {
-    border-color: #d90909;
-}
 
 .productos h2 {
+    font-family: "Anton", sans-serif;
+    font-style: normal;
     font-size: 30px;
     font-weight: bold;
-    color:mintcream;
+    color: #000000;
+}
+
+.bo-fav {
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    color: #000000;
+    border: none;
+    background: none;
+    font-size: 30px;
+}
+
+.fa-heart {
+    position: absolute;
+    left: 2px;
 }
 
 .producto-descripcion {
+    padding-top: 10%;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
     font-size: 18px;
-    color:mintcream;
+    color: #000000;
 }
 
 .producto-precio {
     font-size: 20px;
     font-weight: bold;
     margin-top: 5px;
-    padding: 10px;
-    color: mintcream;
+    padding: 5px;
+    color: #000000;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 15px;
+    border-top: solid 6px;
+    border-bottom: solid 4px;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    //
 }
+
 .buton {
     height: 50px;
     width: 80px;
-    background-color: black;
+    background-color: #000000;
     color: mintcream;
     border: none;
-    text-align:center;
-    transition: ease 1s;
-    border-radius:10px;
+    text-align: center;
+    transition: ease .3s;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 10px;
 }
-.buton:hover{
-    background-color:sienna;
+
+    .buton:active {
+        transform: scale(1.1);
+        border: none;
+        background-color: #CA7A44;
+    }
+
+.carrito {
+    height: 50px;
+    width: 80px;
+    border: none;
+    border-radius: 10px;
+    transition: ease .3s;
+    cursor: pointer;
+    margin-left: 10px;
 }
-/*Footer*/
+
+    .carrito:active {
+        transform: scale(1.1);
+        border: none;
+        color: aliceblue;
+        background-color: #000000;
+    }
+
 footer {
     background-color: #663300; /* Color secundario */
     color: #fff;
     text-align: center;
     padding: 1rem;
-    margin-top: 2rem;
 }
 
 .copyright {
     color: #FFFFFF;
     font-size: 13px;
-    margin:20px;
+     margin:  20px;
 }
