@@ -28,10 +28,13 @@ namespace PokerBurguers_BackEnd
                 SQLcmd.Connection = SQLCon;
 
                 //Declaración de las variables para tomar los datos que el usuario ingresa en el formulario
-                string nombre, apellido_p, apellido_m, correo, telefono, calle, colonia, numerodecasa, codigopostal, referencias;
+                string usuario, contraseña, confirmacion_contraseña, nombre, apellido_p, apellido_m, correo, telefono, calle, colonia, numerodecasa, codigopostal, referencias;
                 char sexo;
 
                 //Asignar a su variable correspondiente a la información ingresada por el usuario
+                usuario = tbUsuario.Text;
+                contraseña = tbContraseña.Text;
+                confirmacion_contraseña = tbConfirmacionContraseña.Text;
                 nombre = tbNombre.Text;
                 apellido_p = tbApellidoP.Text;
                 apellido_m = tbApellidoM.Text;
@@ -45,8 +48,8 @@ namespace PokerBurguers_BackEnd
                 referencias = tbReferencias.Text;
 
                 //Proceso de inserción del usuario en la tabla "Alta_usuario"
-                SQLInsert = string.Format("Insert into Alta_usuario( nombre, apellido_p, apellido_m, correo, sexo, telefono, calle, colonia, numerodecasa, codigopostal, referencias)" +
-                "VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}')", nombre, apellido_p, apellido_m, correo, sexo, telefono, calle, colonia, numerodecasa, codigopostal, referencias);
+                SQLInsert = string.Format("Insert into Alta_usuario(Usuario, Contraseña, Confirmacion_Contraeña, nombre, apellido_p, apellido_m, correo, sexo, telefono, calle, colonia, numerodecasa, codigopostal, referencias)" +
+                "VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}', '{13}')",usuario, contraseña, confirmacion_contraseña, nombre, apellido_p, apellido_m, correo, sexo, telefono, calle, colonia, numerodecasa, codigopostal, referencias);
                 SQLcmd.CommandText = SQLInsert;
                 SQLcmd.ExecuteNonQuery();
 
@@ -57,6 +60,9 @@ namespace PokerBurguers_BackEnd
                 SQLCon.Close(); //cierra la conexión con base de datos 
 
                 //Limpia los campos donde ingreso la infromación el usuario
+                tbUsuario.Text = "";
+                tbContraseña.Text = "";
+                tbConfirmacionContraseña.Text = "";
                 tbNombre.Text = "";
                 tbApellidoP.Text = "";
                 tbApellidoM.Text = "";

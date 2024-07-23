@@ -5,11 +5,43 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+<link rel="stylesheet" href="Estilos/index.css" />
+<link rel="icon" type="image/x-icon" href="imagenes/icono.ico"/>
+    <title>Crear una cuenta</title>
 </head>
 <body>
     <form id="form1" runat="server">
-       <table>
+       <img src="imagenes/ima1.jpg" />
+        <table>
+           <tr>
+               <td>
+                   <h2>Datos de usuario</h2>
+               </td>
+           </tr>
+           <tr>
+               <td>
+                   <asp:Label ID="lbUsuario" runat="server" Text="Nombre de usuario"></asp:Label>
+               </td>
+               <td>
+                        <asp:TextBox ID="tbUsuario" runat="server"></asp:TextBox>
+               </td>
+           </tr>
+           <tr>
+               <td>
+                   <asp:Label ID="lbContraseña" runat="server" Text="Contraseña"></asp:Label>
+                </td>
+               <td>
+                        <asp:TextBox ID="tbContraseña" runat="server"></asp:TextBox>
+               </td>
+           </tr>
+           <tr>
+               <td>
+                   <asp:Label ID="lbConfirmacionContraseña" runat="server" Text="Confirme su contraseña"></asp:Label>
+               </td>
+               <td>
+                        <asp:TextBox ID="tbConfirmacionContraseña" runat="server"></asp:TextBox>
+               </td>
+           </tr>
            <tr>
                <td>
                    <h2>Datos de contacto</h2>
