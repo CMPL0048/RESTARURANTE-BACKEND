@@ -22,7 +22,7 @@ namespace PokerBurguers_BackEnd
             SqlConnection SQLCon = new SqlConnection("Data Source=DESKTOP-TBKQSJ4\\SQLEXPRESS; Initial Catalog=PokerBurguer; Integrated Security=True");
             SqlCommand SQLcmd = new SqlCommand();
 
-            using (SQLCon) 
+            using (SQLCon)
             {
                 SQLCon.Open();//Pone en uso la base de datos o la abre
                 SQLcmd.Connection = SQLCon;
@@ -37,16 +37,16 @@ namespace PokerBurguers_BackEnd
                 apellido_m = tbApellidoM.Text;
                 correo = tbCorreo.Text;
                 sexo = char.Parse(rblSexo.Text);
-                telefono = lbTelefono.Text;
-                calle = lbCalle.Text;
-                colonia = lbColonia.Text;
-                numerodecasa = lbNumeroCasa.Text;
-                codigopostal = lbCodigoPostal.Text;
-                referencias = lbReferencias.Text;
+                telefono = tbTelefono.Text;
+                calle = tbCalle.Text;
+                colonia = tbColonia.Text;
+                numerodecasa = tbNumeroCasa.Text;
+                codigopostal = tbCodigoPostal.Text;
+                referencias = tbReferencias.Text;
 
                 //Proceso de inserción del usuario en la tabla "Alta_usuario"
                 SQLInsert = string.Format("Insert into Alta_usuario( nombre, apellido_p, apellido_m, correo, sexo, telefono, calle, colonia, numerodecasa, codigopostal, referencias)" +
-                "VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}')",nombre,apellido_p,apellido_m,correo,sexo,telefono,calle,colonia,numerodecasa,codigopostal,referencias);
+                "VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}')", nombre, apellido_p, apellido_m, correo, sexo, telefono, calle, colonia, numerodecasa, codigopostal, referencias);
                 SQLcmd.CommandText = SQLInsert;
                 SQLcmd.ExecuteNonQuery();
 
@@ -67,6 +67,7 @@ namespace PokerBurguers_BackEnd
                 tbNumeroCasa.Text = "";
                 tbCodigoPostal.Text = "";
                 tbReferencias.Text = "";
+
             }
         }
     }
