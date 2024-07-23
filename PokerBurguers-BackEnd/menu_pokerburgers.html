@@ -28,16 +28,18 @@
         <ul class="productos">
             <li onclick="toggleActive(this)">
                 <h2>Hamburguesa</h2><br>
+                <asp:HiddenField ID="ProductoID1" runat="server" Value="1" />
                 <button onclick="togglefav()" id="botonfav" class="bo-fav"><i id="a" class="fa-solid fa-heart"></i> </button>
                 <img class="imgcomida" src="imagenes/hamburgesa_milanesa.png">
                 <p class="producto-descripcion"> Hamburguesa con carne de res, queso, lechuga, tomate y salsa especial.</p>
-                <p class="producto-precio">$90.00</p><br/>
+                <p class="producto-precio">$90.00</p><br />
                 <button class="buton">Comprar</button>
                 <button class="carrito"><i class="fa-solid fa-cart-plus"></i></button>
             </li>
 
             <li onclick="toggleActive(this)">
                 <h2>Alitas de Pollo</h2> <br>
+                <asp:HiddenField ID="ProductoID1" runat="server" Value="1" />
                 <button onclick="togglefav2()" id="botonfav2" class="bo-fav"><i id="a2" class="fa-solid fa-heart"></i> </button>
                 <img class="imgcomida" src="imagenes/alitas.jpg">
                 <br />
@@ -49,6 +51,7 @@
 
             <li onclick="toggleActive(this)">
                 <h2>Hamburguesa</h2><br>
+                <asp:HiddenField ID="ProductoID1" runat="server" Value="1" />
                 <button onclick="togglefav3()" id="botonfav3" class="bo-fav"><i id="a3" class="fa-solid fa-heart"></i> </button>
                 <img class="imgcomida" src="imagenes/hamburguesas-mas-monchosas-de-cdmx.jpeg">
                 <p class="producto-descripcion">Incluye una hamburguesa con doble carne de res acompañado de papas fritas crujientes.</p>
@@ -58,7 +61,8 @@
 
             <li onclick="toggleActive(this)">
                 <h2>Sushi</h2><br>
-                <button onclick="togglefav4()" id="botonfav4" class="bo-fav"><i id="a4" class="fa-solid fa-heart"></i> </button>
+                <asp:HiddenField ID="ProductoID1" runat="server" Value="1" />
+                <asp:button onclick="togglefav4()" id="botonfav4" class="bo-fav"><i id="a4" class="fa-solid fa-heart"></i> </asp:button>
                 <img class="imgcomida" src="imagenes/sushi.jpg">
                 <p class="producto-descripcion">
                     Pariedad de rollos de sushi con ingredientes
@@ -152,3 +156,4 @@
     </script>
 </body>
 </html>
+
