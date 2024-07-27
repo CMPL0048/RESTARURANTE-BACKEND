@@ -18,9 +18,16 @@ header {
     height: 60px;
 }
 
+    .logo_footer:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+        transition: ease 0.7s;
+        z-index: 10;
+        transition: all ease 1s;
+    }
+
 nav ul {
     list-style: none;
-    text-decoration: none;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -43,13 +50,8 @@ nav ul {
             nav ul li a:hover {
                 background-color: #854200;
                 color: white;
+                transition: 0.4s;
             }
-
-nav a:hover {
-    color: #c78c19;
-    text-decoration: underline;
-    transition: steps(1, start);
-}
 
 .productos {
     justify-content: center;

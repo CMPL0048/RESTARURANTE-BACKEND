@@ -142,3 +142,10 @@ footer {
     width: 60px;
     height: 60px;
 }
+    .logo_footer:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+        transition: ease 0.7s;
+        z-index: 10;
+        transition: all ease 1s;
+    }

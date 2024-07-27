@@ -21,12 +21,20 @@ header {
     height: 60px;
 }
 
+    .logo_footer:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+        transition: ease 0.7s;
+        z-index: 10;
+        transition: all ease 1s;
+    }
+
 nav ul {
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: center;
-    margin: 0;
+    margin: 0 0 0 0;
 }
 
     nav ul li {
@@ -48,10 +56,6 @@ nav ul {
                 transition: 0.4s;
             }
 
-nav a:hover {
-    color: #c78c19;
-    text-decoration: underline;
-}
 
 .container {
     padding: 20px;

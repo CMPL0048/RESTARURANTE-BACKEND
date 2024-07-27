@@ -1,4 +1,5 @@
-﻿using System;
+﻿//aspx.cs//
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -49,7 +50,7 @@ namespace PokerBurguers_BackEnd
 
                 //Proceso de inserción del usuario en la tabla "Alta_usuario"
                 SQLInsert = string.Format("Insert into Alta_usuario(Usuario, Contraseña, Confirmacion_Contraeña, nombre, apellido_p, apellido_m, correo, sexo, telefono, calle, colonia, numerodecasa, codigopostal, referencias)" +
-                "VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}', '{13}')",usuario, contraseña, confirmacion_contraseña, nombre, apellido_p, apellido_m, correo, sexo, telefono, calle, colonia, numerodecasa, codigopostal, referencias);
+                "VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}', '{13}')", usuario, contraseña, confirmacion_contraseña, nombre, apellido_p, apellido_m, correo, sexo, telefono, calle, colonia, numerodecasa, codigopostal, referencias);
                 SQLcmd.CommandText = SQLInsert;
                 SQLcmd.ExecuteNonQuery();
 

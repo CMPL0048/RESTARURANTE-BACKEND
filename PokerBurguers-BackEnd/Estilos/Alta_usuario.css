@@ -1,0 +1,43 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+}
+.botones {
+}
+footer {
+    background-color: #663300; /* Color secundario */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+    footer p {
+        margin: 0;
+    }
+.logo_footer {
+    width: 60px;
+    height: 60px;
+}
+    .logo_footer:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+        transition: ease 0.7s;
+        z-index: 10;
+        transition: all ease 1s;
+    }
+
+
+section {
+    flex: 1;
+    margin: 0 1rem;
+    max-width: 1863px;
+}
+
+section {
+    flex: 1;
+    margin: 0 1rem;
+    background-color: #fff; /* Fondo blanco para las secciones */
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
