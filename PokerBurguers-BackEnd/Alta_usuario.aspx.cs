@@ -48,33 +48,47 @@ namespace PokerBurguers_BackEnd
                 codigopostal = tbCodigoPostal.Text;
                 referencias = tbReferencias.Text;
 
-                //Proceso de inserción del usuario en la tabla "Alta_usuario"
-                SQLInsert = string.Format("Insert into Alta_usuario(Usuario, Contraseña, Confirmacion_Contraeña, nombre, apellido_p, apellido_m, correo, sexo, telefono, calle, colonia, numerodecasa, codigopostal, referencias)" +
-                "VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}', '{13}')", usuario, contraseña, confirmacion_contraseña, nombre, apellido_p, apellido_m, correo, sexo, telefono, calle, colonia, numerodecasa, codigopostal, referencias);
-                SQLcmd.CommandText = SQLInsert;
-                SQLcmd.ExecuteNonQuery();
+                if (tbUsuario.Text != "" && tbContraseña.Text != "" && tbConfirmacionContraseña.Text != "" && tbNombre.Text != "" && tbApellidoP.Text != "" && tbApellidoM.Text != ""
+                    && tbCorreo.Text != "" && tbTelefono.Text != "" && tbCalle.Text != "" && tbColonia.Text != "" && tbNumeroCasa.Text != "" && tbCodigoPostal.Text != "" && tbReferencias.Text != "")
+                {
+                    //Proceso de inserción del usuario en la tabla "Alta_usuario"
+                    SQLInsert = string.Format("Insert into Alta_usuario(Usuario, Contraseña, Confirmacion_Contraeña, nombre, apellido_p, apellido_m, correo, sexo, telefono, calle, colonia, numerodecasa, codigopostal, referencias)" +
+                    "VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}', '{13}')", usuario, contraseña, confirmacion_contraseña, nombre, apellido_p, apellido_m, correo, sexo, telefono, calle, colonia, numerodecasa, codigopostal, referencias);
+                    SQLcmd.CommandText = SQLInsert;
+                    SQLcmd.ExecuteNonQuery();
 
-                //Si el querry se ejecuta de manera exitosa mandara el siguiente mensaje "Usuario registrado con exito"
-                string script = "alert('Usuario registrado con exito');";
-                ScriptManager.RegisterStartupScript(this, typeof(Page), "Alerta", script, true);
+                    //Si el querry se ejecuta de manera exitosa mandara el siguiente mensaje "Usuario registrado con exito"
+                    string script = "alert('Usuario registrado con exito');";
+                    ScriptManager.RegisterStartupScript(this, typeof(Page), "Alerta", script, true);
 
-                SQLCon.Close(); //cierra la conexión con base de datos 
+                    SQLCon.Close(); //cierra la conexión con base de datos 
+                    
+                    //pequeña prueba para que no se agreguen usuarios con espacios en blanco
+                    //if (tbUsuario.Text == "" && tbContraseña.Text == "" && tbConfirmacionContraseña.Text == "" && tbNombre.Text == "" && tbApellidoP.Text == "" && tbApellidoM.Text == ""
+                    //&& tbCorreo.Text == "" && tbTelefono.Text == "" && tbCalle.Text == "" && tbColonia.Text == "" && tbNumeroCasa.Text == "" && tbCodigoPostal.Text == "" && tbReferencias.Text == "")
+                    //{
+                    //    string script2 = "alert('No pueden quedar espacios en blanco');";
+                    //    ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script2, true);
+                    //}
 
-                //Limpia los campos donde ingreso la infromación el usuario
-                tbUsuario.Text = "";
-                tbContraseña.Text = "";
-                tbConfirmacionContraseña.Text = "";
-                tbNombre.Text = "";
-                tbApellidoP.Text = "";
-                tbApellidoM.Text = "";
-                tbCorreo.Text = "";
-                tbTelefono.Text = "";
-                tbCalle.Text = "";
-                tbColonia.Text = "";
-                tbNumeroCasa.Text = "";
-                tbCodigoPostal.Text = "";
-                tbReferencias.Text = "";
+                    //Limpia los campos donde ingreso la infromación el usuario
+                    tbUsuario.Text = "";
+                    tbContraseña.Text = "";
+                    tbConfirmacionContraseña.Text = "";
+                    tbNombre.Text = "";
+                    tbApellidoP.Text = "";
+                    tbApellidoM.Text = "";
+                    tbCorreo.Text = "";
+                    tbTelefono.Text = "";
+                    tbCalle.Text = "";
+                    tbColonia.Text = "";
+                    tbNumeroCasa.Text = "";
+                    tbCodigoPostal.Text = "";
+                    tbReferencias.Text = "";
 
+                    Response.Redirect("index.html");
+                
+                }
             }
         }
     }

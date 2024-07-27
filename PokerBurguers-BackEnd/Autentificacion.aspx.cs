@@ -43,7 +43,7 @@ namespace PokerBurguers_BackEnd
                 //    ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, true);
                 //}
                 //////////Prueba de IA/////////////
-                ///
+                
             }
         }
     }

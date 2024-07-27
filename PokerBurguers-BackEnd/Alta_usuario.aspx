@@ -137,8 +137,8 @@
             <table>
                 <tr>
                     <td>
-                        <asp:Button ID="btnConfirmarAlta" runat="server" Text="Confirmar" OnClick="btnConfirmarAlta_Click" />
-                        <asp:Button ID="btnCancelarAlta" runat="server" Text="Cancelar" />
+                        <asp:Button ID="btnConfirmarAlta" CssClass="buton" runat="server" Text="Confirmar" OnClick="btnConfirmarAlta_Click" />
+                        <asp:Button ID="btnCancelarAlta" CssClass="buton" runat="server" Text="Cancelar" />
                     </td>
                 </tr>
             </table>
